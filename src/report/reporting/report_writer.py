@@ -215,7 +215,9 @@ def _section_per_spec_table(cost_report: CostReport) -> str:
     emb_headers = " | ".join(f"Embed · {m}" for m in emb_models)
     gen_headers = " | ".join(f"Gen · {m}" for m in gen_models)
     header = f"| Identifier | Filename | Tokens | {emb_headers} | {gen_headers} |"
-    sep_cols = "|---|---|---|" + "|---|" * (len(emb_models) + len(gen_models))
+    
+    num_cols = 3 + len(emb_models) + len(gen_models)
+    sep_cols = "| " + " | ".join(["---"] * num_cols) + " |"
 
     # Rows — sort by token count desc
     sorted_specs = sorted(

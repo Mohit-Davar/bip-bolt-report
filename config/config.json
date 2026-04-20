@@ -1,0 +1,84 @@
+{
+  "models": {
+    "text-embedding-3-small": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.02,
+      "output_per_1m": 0.0
+    },
+    "text-embedding-3-large": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.13,
+      "output_per_1m": 0.0
+    },
+    "gpt-5.4-mini": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.75,
+      "output_per_1m": 4.50
+    },
+    "gpt-5.4-nano": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.20,
+      "output_per_1m": 1.25
+    },
+    "gpt-5-mini": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.25,
+      "output_per_1m": 2.00
+    },
+    "gpt-5-nano": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.05,
+      "output_per_1m": 0.40
+    },
+    "gpt-4.1-mini": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.40,
+      "output_per_1m": 1.60
+    },
+    "gpt-4.1-nano": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.10,
+      "output_per_1m": 0.40
+    },
+    "gpt-4o-mini": {
+      "provider": "OpenAI",
+      "input_per_1m": 0.15,
+      "output_per_1m": 0.60
+    },
+    "gemini-2.5-flash-lite": {
+      "provider": "Google",
+      "input_per_1m": 0.10,
+      "output_per_1m": 0.40
+    },
+    "gemini-2.5-flash": {
+      "provider": "Google",
+      "input_per_1m": 0.30,
+      "output_per_1m": 2.50
+    },
+    "gemini-3-flash-preview": {
+      "provider": "Google",
+      "input_per_1m": 0.50,
+      "output_per_1m": 3.00
+    },
+    "claude-3-haiku": {
+      "provider": "Anthropic",
+      "input_per_1m": 0.25,
+      "output_per_1m": 1.25
+    },
+    "claude-instant": {
+      "provider": "Anthropic",
+      "input_per_1m": 0.80,
+      "output_per_1m": 2.40
+    },
+    "claude-3.5-haiku": {
+      "provider": "Anthropic",
+      "input_per_1m": 0.80,
+      "output_per_1m": 4.00
+    }
+  },
+  "assumptions": {
+    "explanations_per_spec": 3,
+    "context_tokens": 5000,
+    "output_tokens_per_explanation": 1000
+  }
+}
